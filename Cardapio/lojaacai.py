@@ -1,7 +1,7 @@
 menu = "Cardápio"
 
 
-print("Bem-vindo a Loja de Açaí do Careca")
+print("Bem-vindo a Loja de Açaí ")
 print("-----------------" + menu + "------------------")
 print("-------------------------------------------")
 print("---| Tamanho | Cupuaçu (CP) | Açaí (AC)|---")

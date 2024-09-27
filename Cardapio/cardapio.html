@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Açaí</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="cardapio.js"></script>
+
+</head>
+<body>
+
+    <div class="container">
+        <h1>Bem-vindo!</h1>
+        
+        <div class="menu">
+            <h2>Cardápio</h2>
+            <table>
+                <tr>
+                    <th>Tamanho</th>
+                    <th>Cupuaçu (CP)</th>
+                    <th>Açaí (AC)</th>
+                </tr>
+                <tr>
+                    <td>P</td>
+                    <td>R$ 9.00</td>
+                    <td>R$ 11.00</td>
+                </tr>
+                <tr>
+                    <td>M</td>
+                    <td>R$ 14.00</td>
+                    <td>R$ 16.00</td>
+                </tr>
+                <tr>
+                    <td>G</td>
+                    <td>R$ 18.00</td>
+                    <td>R$ 20.00</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="order-section">
+            <h2>Faça seu pedido</h2>
+            <form id="order-form">
+                <label for="sabor">Escolha o sabor:</label>
+                <select id="sabor" required>
+                    <option value="">Selecione</option>
+                    <option value="CP">Cupuaçu (CP)</option>
+                    <option value="AC">Açaí (AC)</option>
+                </select><br>
+
+                <label for="tamanho">Escolha o tamanho:</label>
+                <select id="tamanho" required>
+                    <option value="">Selecione</option>
+                    <option value="P">P</option>
+                    <option value="M">M</option>
+                    <option value="G">G</option>
+                </select><br>
+
+                <button type="button" onclick="adicionarPedido()">Adicionar ao pedido</button>
+            </form>
+
+            <h3 id="pedido"></h3>
+            <h3 id="total">Total: R$ 0,00</h3>
+        </div>
+    </div>
+
+
+</body>
+</html>
+
+
+   
